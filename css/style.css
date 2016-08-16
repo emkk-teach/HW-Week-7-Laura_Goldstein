@@ -18,7 +18,14 @@ Developer @GA in NYC
 }
 
 /* Clear fix hack */
-
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
 
 .clear {
   clear: both;
@@ -39,12 +46,17 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-  color: red;
+  color: #f0efef;
   font-size: 26px;
   line-height: 1.4;
   color: #606161;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
+}
+@media screen and (max-width: 768px){
+  body{
+    font-size: 14px;
+  }
 }
 a {
   text-decoration: none;
@@ -57,8 +69,15 @@ a {
 
 /* Center the container */
 .container {
-  width: 100%;
+  width: 960px;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+  .container{
+    display: block;
+    float: left;
+    width: 100%
+  }
 }
 .logo {
   font-size: 48px;
@@ -92,8 +111,8 @@ header nav ul li a {
   height: 700px;
   background: url(../images/header_bg.jpg) no-repeat top center #131e27;
   padding-top: 32px;
-  width: 100%;
 }
+
 
 #hero .logo {
   color: #fff;
@@ -104,7 +123,11 @@ header nav ul li a {
   color: #fff;
   margin: 120px 0 90px;
   font-weight: 600;
-  width: 100%;
+}
+@media screen and (max-width: 768px){
+  #hero h2{
+    font-size: 24px;
+  }
 }
 .button {
   border-radius: 5px;
@@ -115,29 +138,49 @@ header nav ul li a {
   text-align: center;
   display: block;
   margin: 0 auto;
-  height: 60px;
 }
+
 .yellow {
   background: #f9e42e;
   color: #033048;
 }
+
 .blue {
   background: #033048;
   color: #fff;
   font-size: 24px;
 }
+@media screen and (max-width: 768px){
+  blockquote{
+    font-size: 14px;
+  }
+}
 #benefits {
   padding: 100px 0 80px;
 }
+@media screen and (max-width: 768px){
+  #benefits{
+    display: block;
+    float: left;
+    width: 100%
+  }
+}
+
 h3 {
   color: #033048;
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 40px;
 }
-#benefits p, #benefits ul {
-  width: 100%;
+@media screen and (max-width: 768px){
+  h3{
+    font-size: 14px;
+  }
 }
+#benefits p, #benefits ul {
+  width: 600px;
+}
+
 #benefits ul {
   list-style: disc;
   margin: 30px 0 0 80px;
@@ -147,13 +190,25 @@ h3 {
   padding: 70px 0 70px;
   color: #fff;
 }
+@media screen and (max-width: 768px){
+  #testimonial{
+    display: block;
+    float: left;
+    width: 100%
+  }
+}
 blockquote {
   font-size: 36px;
   font-weight: 300;
   font-style: italic;
   text-align: center;
-  width: 100%;
+  width: 580px;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+  blockquote{
+    font-size: 24px;
+  }
 }
 blockquote span {
   font-weight: 600;
@@ -164,20 +219,33 @@ blockquote span {
   margin-top: 80px;
 }
 #posts {
-  width: 75%;
+  width: 700px;
   display: inline-block;
   margin-right: 20px;
   vertical-align: top;
 }
+@media screen and (max-width: 768px){
+  #posts{
+    display: block;
+    float: left;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px){
+  #sidebar img{
+    display: none;
+  }
+}
 #sidebar {
-  width: 20%;
+  width: 240px;
   display: inline-block;
   vertical-align: top;
 }
 @media screen and (max-width: 768px){
   #sidebar{
-   display: block;
-   width: 100%;
+    display: block;
+    float: left;
+    width: 100%;
   }
 }
 .post {
@@ -194,36 +262,14 @@ blockquote span {
 .post h2 a {
   color: #043049;
 }
-@media screen and (max-width: 768px){
-  .post h2{
-    font-size: 24px;
-  }
 
 .post img {
   margin-bottom: 30px;
-}
-@media screen and (max-width: 768px){
-  .post img{
-    display: none;
-  }
 }
 .post p {
   font-size: 24px;
   line-height: 1.333;
   color: #606161;
-}
-@media screen and (max-width: 768px){
-  .post p {
-    font-size: 15px;
-  }
-  .clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-  }
 }
 .post p:first-of-type:first-letter {
   float: left;
@@ -285,26 +331,31 @@ blockquote span {
   color: #043049;
   font-weight: 600;
 }
-@media screen and (max-width: 768px){
- #sidebar{
-  display: block;
-  float: left;
-  font-size: 24px;
- }
-  }
-}
+
 #bottom-cta {
   background: #f9e42e;
   padding: 30px;
   text-align: center;
-  display: block;
+}
+@media screen and (max-width: 768px){
+  #bottom-cta{
+    display: block;
+    float: left;
+    width: 100%;
+  }
 }
 
 footer {
   background: #121212;
   padding: 65px 0 45px;
   text-align: center;
-  display: block;
+}
+@media screen and (max-width: 768px){
+  footer{
+    display: block;
+    float: left;
+    width: 100%;
+  }
 }
 footer .logo {
   color: #f9e42e;
