@@ -53,11 +53,7 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
-@media screen and (max-width: 768px){
-  body{
-    font-size: 14px;
-  }
-}
+
 a {
   text-decoration: none;
 }
@@ -72,13 +68,7 @@ a {
   width: 960px;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px){
-  .container{
-    display: block;
-    float: left;
-    width: 100%
-  }
-}
+
 .logo {
   font-size: 48px;
   font-weight: 800;
@@ -124,11 +114,7 @@ header nav ul li a {
   margin: 120px 0 90px;
   font-weight: 600;
 }
-@media screen and (max-width: 768px){
-  #hero h2{
-    font-size: 24px;
-  }
-}
+
 .button {
   border-radius: 5px;
   font-weight: 800;
@@ -150,20 +136,9 @@ header nav ul li a {
   color: #fff;
   font-size: 24px;
 }
-@media screen and (max-width: 768px){
-  blockquote{
-    font-size: 14px;
-  }
-}
+
 #benefits {
   padding: 100px 0 80px;
-}
-@media screen and (max-width: 768px){
-  #benefits{
-    display: block;
-    float: left;
-    width: 100%
-  }
 }
 
 h3 {
@@ -172,11 +147,7 @@ h3 {
   font-weight: 600;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 768px){
-  h3{
-    font-size: 14px;
-  }
-}
+
 #benefits p, #benefits ul {
   width: 600px;
 }
@@ -190,13 +161,7 @@ h3 {
   padding: 70px 0 70px;
   color: #fff;
 }
-@media screen and (max-width: 768px){
-  #testimonial{
-    display: block;
-    float: left;
-    width: 100%
-  }
-}
+
 blockquote {
   font-size: 36px;
   font-weight: 300;
@@ -205,11 +170,7 @@ blockquote {
   width: 580px;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px){
-  blockquote{
-    font-size: 24px;
-  }
-}
+
 blockquote span {
   font-weight: 600;
   display: block;
@@ -224,30 +185,13 @@ blockquote span {
   margin-right: 20px;
   vertical-align: top;
 }
-@media screen and (max-width: 768px){
-  #posts{
-    display: block;
-    float: left;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 768px){
-  #sidebar img{
-    display: none;
-  }
-}
+
 #sidebar {
   width: 240px;
   display: inline-block;
   vertical-align: top;
 }
-@media screen and (max-width: 768px){
-  #sidebar{
-    display: block;
-    float: left;
-    width: 100%;
-  }
-}
+
 .post {
   border-bottom: 1px solid #043049;
   padding-bottom: 40px;
@@ -337,26 +281,13 @@ blockquote span {
   padding: 30px;
   text-align: center;
 }
-@media screen and (max-width: 768px){
-  #bottom-cta{
-    display: block;
-    float: left;
-    width: 100%;
-  }
-}
 
 footer {
   background: #121212;
   padding: 65px 0 45px;
   text-align: center;
 }
-@media screen and (max-width: 768px){
-  footer{
-    display: block;
-    float: left;
-    width: 100%;
-  }
-}
+
 footer .logo {
   color: #f9e42e;
   margin-bottom: 68px;
@@ -370,4 +301,61 @@ footer p {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
+}
+
+/*Media Query*/
+@media screen and (max-width: 768px){
+  body{
+    font-size: 14px;
+  }
+  .container{
+    display: block;
+    float: left;
+    width: 100%
+  }
+  #hero h2{
+    font-size: 24px;
+  }
+  blockquote{
+    font-size: 14px;
+  }
+  #benefits{
+    display: block;
+    float: left;
+    width: 100%
+  }
+  h3{
+    font-size: 14px;
+  }
+  #testimonial{
+    display: block;
+    float: left;
+    width: 100%
+  }
+   blockquote{
+    font-size: 24px;
+  }
+  #posts{
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  #sidebar img{
+    display: none;
+  }
+  #sidebar{
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  #bottom-cta{
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  footer{
+    display: block;
+    float: left;
+    width: 100%;
+  }
 }
